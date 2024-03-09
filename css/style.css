@@ -10,7 +10,7 @@ body {
 }
 
 .l-header {
-  position: fixed;
+  /* position: fixed; */
   height: 110px;
   z-index: 10;
 }
@@ -40,10 +40,10 @@ body {
   font-family: "Cormorant Garamond", serif;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: .06em;
+  letter-spacing: 0.06em;
   font-style: normal;
 }
 
-.l-header__nav__li .reserve a{
+.l-header__nav__li .reserve a {
   border: 1px solid #f4f5f5;
 }
