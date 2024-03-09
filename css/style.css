@@ -9,12 +9,41 @@ body {
     "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
 }
 
-l-header__nav__ul {
+.l-header {
+  position: fixed;
+  height: 110px;
+  z-index: 10;
+}
+
+.l-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.l-header .p-logo img {
+  height: 30px;
+}
+
+.l-header__nav {
   display: inline-block;
 }
 
 .l-header__nav__li {
+  display: inline-block;
+  padding: 15px;
+}
+
+.l-header__nav__li a {
   font-family: "Cormorant Garamond", serif;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: .06em;
   font-style: normal;
+}
+
+.l-header__nav__li .reserve a{
+  border: 1px solid #f4f5f5;
 }
