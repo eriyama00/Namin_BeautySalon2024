@@ -47,3 +47,31 @@ body {
 .l-header__nav__li .reserve a {
   border: 1px solid #f4f5f5;
 }
+
+.FV {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.FV__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 20px;
+}
+
+.FV__title {
+  font-size: 46px;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.FV__subtitle {
+  font-size: 11px;
+  width: 25%;
+}
+
+.FV__pict img {
+  height: 800px;
+}
