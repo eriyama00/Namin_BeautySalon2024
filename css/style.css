@@ -74,4 +74,7 @@ body {
 
 .FV__pict img {
   height: 800px;
+  max-width: 100%;
 }
+
+
