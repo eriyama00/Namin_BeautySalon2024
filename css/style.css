@@ -9,6 +9,10 @@ body {
     "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
 }
 
+h1 {
+  font-size: 54px;
+}
+
 .l-header {
   /* position: fixed; */
   height: 110px;
@@ -81,4 +85,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 50px;
+}
+
+.p-about__wrapper img {
+  height: 550px;
+}
+
+/* Read more要素 */
+.c-read {
+
 }
