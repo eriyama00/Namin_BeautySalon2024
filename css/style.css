@@ -10,6 +10,10 @@ body {
 }
 
 h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  font-style: normal;
   font-size: 54px;
 }
 
@@ -27,6 +31,7 @@ h1 {
   margin: 0 auto;
   padding: 2rem 0;
 }
+
 .l-header .p-logo img {
   height: 30px;
 }
@@ -43,7 +48,7 @@ h1 {
 .l-header__nav__li a {
   font-family: "Cormorant Garamond", serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 0.06em;
   font-style: normal;
 }
@@ -61,13 +66,16 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 45px;
+  padding-top: 140px;
   padding-bottom: 20px;
 }
 
 .FV__title {
-  font-size: 46px;
-  font-weight: 200;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  font-style: normal;
+  font-size: 42px;
   line-height: 1.5;
 }
 
@@ -85,14 +93,56 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
   padding-top: 50px;
+  padding-bottom: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.p-about__container {
+  width: 50%;
+}
+
+.p-about__h1 {
+  padding-bottom: 30px;
 }
 
 .p-about__wrapper img {
   height: 550px;
 }
 
+.c-text {
+  letter-spacing: 0.08em;
+  line-height: 2;
+  padding-bottom: 20px;
+}
+
 /* Read more要素 */
 .c-read {
 
+}
+
+.p-concept {
+  background-color: #738B8C;
+  color: #FFFFFF;
+}
+
+.p-concept__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.p-concept__h1 {
+  padding-bottom: 30px;
+}
+
+.p-concept__img {
+  height: 550px;
 }
