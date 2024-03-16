@@ -42,19 +42,21 @@ h1 {
 
 .l-header__nav__li {
   display: inline-block;
-  padding: 15px;
+  margin: 0 15px;
 }
 
 .l-header__nav__li a {
   font-family: "Cormorant Garamond", serif;
   font-size: 16px;
   font-weight: 300;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.09em;
   font-style: normal;
 }
 
-.l-header__nav__li .reserve a {
-  border: 1px solid #f4f5f5;
+.reserve {
+  border: 1px solid #767676;
+  padding: 4px 11px;
+  border-radius: 2em;
 }
 
 .FV {
@@ -66,8 +68,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 140px;
-  padding-bottom: 20px;
+  margin-top: 140px;
+  margin-bottom: 20px;
 }
 
 .FV__title {
@@ -120,12 +122,34 @@ h1 {
 
 /* Read more要素 */
 .c-read {
+  position: relative;
+  margin-top: 30px;
+}
 
+.c-read__text {
+  font-family: "Helvetica", "Helvetica Neue", "Arial";
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.c-read::after {
+  content: '';
+  width: 200px;
+  height: 1px;
+  display: inline-block;
+  background-color:#738b8c;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.reverse::after {
+  background-color:#ffffff;
 }
 
 .p-concept {
-  background-color: #738B8C;
-  color: #FFFFFF;
+  background-color: #738b8c;
+  color: #ffffff;
 }
 
 .p-concept__container {
