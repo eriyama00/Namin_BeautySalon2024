@@ -118,8 +118,11 @@ h1 {
 
 /* Read more要素 */
 .c-read {
+  display: flex;
+  justify-content: space-between;
   position: relative;
-  margin-top: 30px;
+  margin-top: 50px;
+  width: 200px;
 }
 
 .c-read__text {
@@ -128,10 +131,14 @@ h1 {
   font-weight: 100;
 }
 
+.c-read img {
+  width: 15px;
+}
+
 .c-read::after {
   content: '';
   width: 200px;
-  height: 1px;
+  height: 0.7px;
   display: inline-block;
   background-color:#738b8c;
   position: absolute;
