@@ -86,7 +86,8 @@ h1 {
 
 .FV__pict img {
   height: 800px;
-  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .p-about {
@@ -136,18 +137,18 @@ h1 {
 }
 
 .c-read::after {
-  content: '';
+  content: "";
   width: 200px;
   height: 0.7px;
   display: inline-block;
-  background-color:#738b8c;
+  background-color: #738b8c;
   position: absolute;
   bottom: -10px;
   left: 0;
 }
 
 .reverse::after {
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
 
 .p-concept {
@@ -194,6 +195,28 @@ h1 {
   gap: 20px;
 }
 
+.p-menu__h1 {
+  padding-bottom: 30px;
+}
+
+.p-menu__wrapper {
+  width: 50%;
+}
+
+.p-menu__list {
+  width: 50%;
+}
+
+.p-menu__list__ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-menu__list__ul__li {
+  margin: 5px;
+  width: calc(50% - 10px);
+}
+
 .p-info__address {
   display: flex;
   flex-direction: column;
@@ -207,4 +230,53 @@ h1 {
   max-width: 90%;
   padding: 50px 50px;
   margin: 0 auto;
+}
+
+.p-reserve__container {
+  display: flex;
+  border-top: 1px solid hsla(183, 10%, 80%, 1);
+  border-bottom: 1px solid hsla(183, 10%, 80%, 1);
+}
+
+.p-reserve__container__left {
+  width: 30%;
+  border-right: 1px solid hsla(183, 10%, 80%, 1);
+}
+
+.p-reserve__h1 {
+  padding-bottom: 30px;
+}
+
+.p-reserve__container__right {
+  width: 70%;
+  display: flex;
+}
+
+.c-small {
+  font-family: "Noto Sans JP", "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "YuGothic",
+    "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック",
+    "MS PGothic", "メイリオ", "Meiryo", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.l-footer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.l-footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.l-footer__container__left {
+  display: flex;
+  gap: 20px;
+}
+
+.l-footer__container__left__img {
+  height: 25px;
 }
