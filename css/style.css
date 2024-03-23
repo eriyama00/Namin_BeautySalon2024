@@ -136,6 +136,10 @@ h1 {
   width: 15px;
 }
 
+.c-read.reverse img {
+  stroke: #fff;
+}
+
 .c-read::after {
   content: "";
   width: 200px;
@@ -190,8 +194,13 @@ h1 {
 .p-menu__image {
   display: flex;
   align-items: flex-end;
+  gap: 15px;
   padding-bottom: 30px;
   overflow: hidden;
+}
+
+.p-menu__image img {
+  max-width: 100%;
 }
 
 .p-menu__image__01 {
