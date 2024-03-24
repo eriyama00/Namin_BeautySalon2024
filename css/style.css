@@ -17,10 +17,31 @@ h1 {
   font-size: 54px;
 }
 
+.pc-only {
+  display: block;
+}
+
+.sp-only {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .pc-only {
+    display: none;
+  }
+
+  .sp-only {
+    display: block;
+  }
+
+}
+
 .l-header {
-  /* position: fixed; */
+  position: fixed;
+  top: 0;
   height: 110px;
   z-index: 10;
+  width: 100%;
 }
 
 .l-header__wrapper {
@@ -51,6 +72,39 @@ h1 {
   font-weight: 300;
   letter-spacing: 0.09em;
   font-style: normal;
+}
+
+.l-header__menuButton {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .l-header__nav__li {
+    display: none;
+  }
+
+  .l-header__nav__li .reserve {
+    display: block;
+  }
+
+  .l-header__menuButton {
+    display: block;
+    width: 60px;
+    height: 60px;
+  }
+
+  .l-header__inner {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .l-header__inner span {
+    height: 2px;
+    width: 100%;
+    background-color: #767676;
+  }
 }
 
 .reserve {
@@ -99,6 +153,25 @@ h1 {
   margin: 50px auto 30px auto;
 }
 
+@media screen and (max-width: 680px) {
+  .p-about {
+    display: block;
+  }
+}
+
+.p-about__images {
+  position:relative;
+}
+
+.p-about__images img {
+  width: 100%;
+  height: auto;
+}
+
+.p-about__item01 {
+  position: relative;
+}
+
 .p-about__container {
   width: 50%;
 }
@@ -136,9 +209,10 @@ h1 {
   width: 15px;
 }
 
-.c-read.reverse img {
+/* svgの線色変更保留 */
+/* .c-read.reverse img {
   stroke: #fff;
-}
+}*/
 
 .c-read::after {
   content: "";
