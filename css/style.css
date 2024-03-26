@@ -150,7 +150,7 @@ h1 {
   align-items: center;
   gap: 20px;
   width: 90%;
-  margin: 50px auto 30px auto;
+  margin: 80px auto 60px auto;
 }
 
 @media screen and (max-width: 680px) {
@@ -166,10 +166,43 @@ h1 {
 .p-about__images img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .p-about__item01 {
   position: relative;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.p-about__item02 {
+  position: absolute;
+  overflow: hidden;
+  top: 25%;
+  left:-70px;
+  right: 50%;
+  height: 200px;
+  z-index:5;
+}
+
+.p-about__item03 {
+  position: absolute;
+  overflow: hidden;
+  bottom: -30px;
+  left: -40px;
+  height: 170px;
+  width: 160px;
+  z-index: 3;
+}
+
+.p-about__item04 {
+  position: absolute;
+  overflow: hidden;
+  bottom: -15px;
+  right: -60px;
+  height: 230px;
+  width: 210px;
+  z-index: 2;
 }
 
 .p-about__container {
@@ -275,6 +308,7 @@ h1 {
 
 .p-menu__image img {
   max-width: 100%;
+  object-fit: cover;
 }
 
 .p-menu__image__01 {
@@ -290,7 +324,7 @@ h1 {
 }
 
 .p-menu__img__02 {
-  height: 200px;
+  height: 300px;
 }
 
 .p-menu__image__03 {
@@ -298,7 +332,7 @@ h1 {
 }
 
 .p-menu__img__03 {
-  height: 200px;
+  height: 300px;
 }
 
 .p-menu__common {
