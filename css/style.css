@@ -398,6 +398,7 @@ h1 {
 .p-reserve__container__right {
   width: 70%;
   display: flex;
+  align-items: center;
 }
 
 .c-small {
@@ -408,6 +409,7 @@ h1 {
   font-size: 14px;
   font-weight: 100;
 }
+
 
 .l-footer {
   width: 90%;
