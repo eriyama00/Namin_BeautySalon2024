@@ -17,6 +17,15 @@ h1 {
   font-size: 54px;
 }
 
+.c-small {
+  font-family: "Noto Sans JP", "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "YuGothic",
+    "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック",
+    "MS PGothic", "メイリオ", "Meiryo", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+
 .pc-only {
   display: block;
 }
@@ -371,13 +380,70 @@ h1 {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .p-info__notice {
-  background-color: gray;
+  background-color: #EDEFF0;
   max-width: 90%;
-  padding: 50px 50px;
+  padding: 80px 80px;
   margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.p-info__title {
+  margin-bottom: 2em;
+  letter-spacing: 0.1em;
+}
+
+.c-tag {
+  display:inline-block;
+  width: 65px;
+  height: 25px;
+  background-color: #317A7F;
+  color: #fff;
+  border-radius: 25px;
+  margin-right: 15px;
+  font-family: "Helvetica", "Helvetica Neue", "Arial";
+  font-size: 16px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.c-title {
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+.c-date {
+  font-family: "Helvetica", "Helvetica Neue", "Arial";
+  font-size: 18px;
+  font-weight: 100;
+  color: #89ABAD;
+  position:relative;
+}
+
+.c-date::before {
+  content:"";
+  display:inline-block;
+  width: 1px;
+  height: 20px;
+  background-color: #89ABAD;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10px;
+}
+
+.p-info__text {
+  line-height: 2.5em;
+}
+
+.p-info__text__WH {
+  display: block;
+  background-color: #F4F5F5;
+  padding: 15px 30px;
+  margin: 20px 0;
 }
 
 .p-reserve__container {
@@ -399,15 +465,6 @@ h1 {
   width: 70%;
   display: flex;
   align-items: center;
-}
-
-.c-small {
-  font-family: "Noto Sans JP", "游ゴシック Medium", "Yu Gothic Medium",
-    "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "YuGothic",
-    "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック",
-    "MS PGothic", "メイリオ", "Meiryo", sans-serif;
-  font-size: 14px;
-  font-weight: 100;
 }
 
 
