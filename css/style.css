@@ -467,6 +467,28 @@ h1 {
   align-items: center;
 }
 
+.p-reserve__item01 {
+  height: 100%;
+  align-items: center;
+  border-right: 1px solid hsla(183, 10%, 80%, 1);
+}
+
+.p-reserve__item01 a {
+  position: relative;
+  display:block;
+  padding: 25px 0;
+}
+
+.p-reserve__item01 img {
+  position:absolute;
+  height: 70px;
+  top: 50%;
+}
+
+.p-reserve__item02 {
+  height: 100%;
+  border-right: 1px solid hsla(183, 10%, 80%, 1);
+}
 
 .l-footer {
   width: 90%;
