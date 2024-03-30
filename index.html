@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <!-- 文字コード！-->
     <meta charset="utf-8" />
-    <!-- ブラウザで表示されるタイトル !-->
     <title>NAMIN SALON</title>
     <!-- スタイルシート -->
     <link rel="stylesheet" href="css/reset.css" />
@@ -12,7 +10,13 @@
       href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.min.css"/>
     <!-- style.css -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- slick.css -->
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+
     <meta name="viewport" content="width=device-width" />
+
     <!-- webフォント Cormorant Garamond-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -151,6 +155,13 @@
 
     <div class="p-slide">
       <!-- 画像のスライド -->
+      <div class="p-slide__autoplay">
+        <img src="images/pic_10.jpg" alt="image">
+        <img src="images/pic_10.jpg" alt="image">
+        <img src="images/pic_10.jpg" alt="image">
+        <img src="images/pic_10.jpg" alt="image">
+        <img src="images/pic_10.jpg" alt="image">
+      </div>
     </div>
     <div class="p-info">
       <div class="p-info__address">
@@ -215,5 +226,31 @@
       <div class="l-footer__container__right"> © NAMIN. all rights reserved</div>
     </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $('.p-slide__autoplay').slick({
+        autoplay: true, // 自動でスクロール
+        autoplaySpeed: 0, // 自動再生のスライド切り替えまでの時間を設定
+        speed: 5000, // スライドが流れる速度を設定
+        cssEase: "linear", // スライドの流れ方を等速に設定
+        slidesToShow: 3, // 表示するスライドの数
+        swipe: false, // 操作による切り替えはさせない
+        arrows: false, // 矢印非表示
+        pauseOnFocus: false, // スライダーをフォーカスした時にスライドを停止させるか
+        pauseOnHover: false, // スライダーにマウスホバーした時にスライドを停止させるか
+        responsive: [
+          {
+            breakpoint: 750,
+            settings: {
+              slidesToShow: 2, // 画面幅750px以下でスライド3枚表示
+            }
+          }
+        ]
+      });
+
+    </script>
   </body>
 </html>

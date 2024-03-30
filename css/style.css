@@ -435,6 +435,16 @@ h1 {
   left: -10px;
 }
 
+.p-slide__autoplay {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.p-slide__autoplay img {
+  height: 800px;
+  object-fit: cover;
+}
+
 .p-info__text {
   line-height: 2.5em;
 }
