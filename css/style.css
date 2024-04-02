@@ -99,6 +99,20 @@ h1 {
   font-weight: 300;
   letter-spacing: 0.09em;
   font-style: normal;
+  /*
+  position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: #738b8c;
+	transition: all 0.3s ease 0s;
+  */
+}
+
+.l-header__nav__li a:hover::after {
+  width: 100%;
 }
 
 .reserve {
@@ -334,17 +348,24 @@ h1 {
 
 .c-read::after {
   content: "";
-  width: 200px;
   height: 0.7px;
+  bottom: 0;
+  left: 0;
+  width: ;
   display: inline-block;
   background-color: #738b8c;
   position: absolute;
   bottom: -10px;
-  left: 0;
+  transition: all 0.3s ease 0s;
 }
 
 .reverse::after {
   background-color: #ffffff;
+}
+
+.c-read:hover::after {
+  background-color: #455555;
+  width: 100%;
 }
 
 @media screen and (max-width: 680px) {
@@ -701,12 +722,21 @@ h1 {
     justify-content: space-between;
   }
 
+  .c-small {
+    font-size: 12px;
+  }
+  }
+
   .short {
     width: 200px;
   }
 
   .short::after {
     width: 200px;
+  }
+
+  .p-reserve__item03 img {
+    height: 70px;
   }
 }
 
