@@ -751,6 +751,11 @@ h1 {
   .p-reserve__item03 img {
     height: 70px;
   }
+
+  .p-reserve__item01:hover, .p-reserve__item02:hover,
+  .p-reserve__item03:hover {
+    background-color: #E3E9E9;
+  }
 }
 
 .l-footer {
