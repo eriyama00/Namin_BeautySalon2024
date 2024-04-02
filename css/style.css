@@ -121,6 +121,14 @@ h1 {
   border-radius: 2em;
 }
 
+.reserve:hover {
+  border: 1px solid #F8F8F8;
+  padding: 0 11px;
+  border-radius: 2em;
+  color:#e3f9fa;
+  background-color: #C3C4C4;
+}
+
 .l-header__nav__sp {
   display: none;
 }
@@ -351,7 +359,7 @@ h1 {
   height: 0.7px;
   bottom: 0;
   left: 0;
-  width: ;
+  width: 0;
   display: inline-block;
   background-color: #738b8c;
   position: absolute;
@@ -360,11 +368,16 @@ h1 {
 }
 
 .reverse::after {
-  background-color: #ffffff;
+  background-color: #abb9ba;
 }
 
 .c-read:hover::after {
-  background-color: #455555;
+  background-color: #576c6c;
+  width: 100%;
+}
+
+.reserve:hover::after {
+  background-color: #ffffff;
   width: 100%;
 }
 
@@ -502,11 +515,11 @@ h1 {
 }
 
 .p-menu__list__ul li:nth-child(1) {
-  border-top: 0.5px solid #fff;
+  border-top: 0.5px solid #abb9ba;
 }
 
 .p-menu__list__ul li:nth-child(2) {
-  border-top: 0.5px solid #fff;
+  border-top: 0.5px solid #abb9ba;
 }
 
 .p-menu__list__ul a::after {
@@ -514,7 +527,7 @@ h1 {
   width: 200px;
   height: 0.7px;
   display: inline-block;
-  background-color: #ffffff;
+  background-color: #abb9ba;
   position: absolute;
 }
 
