@@ -715,12 +715,17 @@ h1 {
   padding: 55px 20px;
 }
 
+.p-reserve__container__sp {
+  display: none;
+}
+
 @media screen and (max-width: 680px) {
   .p-reserve__container {
     display: none;
   }
 
   .p-reserve__container__sp {
+    display: block;
     width: 90%;
     margin: 0 auto;
   }
