@@ -46,14 +46,38 @@
 
         <div class="l-header__nav__sp">
           <a href="#" class="l-header__menu reserve">Reservation</a>
-          <div class="l-header__menuButton">
+          <button class="l-header__menuButton" id="js-hamburger-menu">
             <div class="l-header__inner">
               <span></span>
               <span></span>
               <span></span>
               </div>
-            </div>
+          </button>
         </div>
+        </div>
+        <div class="l-header__modal__menu">
+          <div class="l-header__modal__wrapper">
+            <nav>
+              <ul>
+                <li><a href="#" class="navigation__link">Home
+                </a></li>
+                <li><a href="#" class="navigation__link">About
+                </a></li>
+                <li><a href="#" class="navigation__link">Menu</a></li>
+                <li><a href="#" class="navigation__link">Staff</a></li>
+                <li><a href="#" class="navigation__link">Salon Info</a></li>
+                <li><a href="#" class="navigation__link">Access</a></li>
+                <li><a href="#" class="navigation__link">Reservation</a></li>
+              </ul>
+            </nav>
+            <img src="images/insta.svg" alt="instagram">
+            <div class="adress__modal">
+              <span>Kralheit Mishuku I 101,<br>
+              1-3-23 Mishuku, Setagaya-ku,<br>
+              Tokyo 154-0005, Japan <a href="#">Google Maps</a>
+              </span>
+            </div>
+          </div>
     </div>
     </header>
 
@@ -221,7 +245,7 @@
         <a href="#">
         <img src="images/Line_icon.svg"><br><span>公式LINEで予約する</span></a></div>
         <div class="p-reserve__item02">
-          <img src="images/Beauty_Logo_135_45.gif"><br><span>HOTPEPPERで予約する</span></div>
+          <img src="images/Beauty_Logo.gif"><br><span>HOTPEPPERで予約する</span></div>
         <div class="p-reserve__item03"><span>03-6805-3988</span><br><span>電話で予約する</span></div>
       </div>
     </div>
@@ -238,7 +262,7 @@
         <a href="#">
         <img src="images/Line_icon.svg"><br><span>公式LINE</span></a></div>
         <div class="p-reserve__item02"><a href="#">
-          <img src="images/Beauty_Logo_135_45.gif"><br><span>HOTPEPPER</span></a></div>
+          <img src="images/Beauty_Logo.gif"><br><span>HOTPEPPER</span></a></div>
         <div class="p-reserve__item03"><a href="#"><img src="images/phone.svg"><br><span>電話予約</span></a></div>
         </div>
         <span class="c-small">※公式LINEからのご予約をおすすめしております。
@@ -262,6 +286,13 @@
     <script src="slick/slick.min.js"></script>
 
     <script type="text/javascript">
+      $(function () {
+      $('#js-hamburger-menu, .navigation__link').on('click', function () {
+        $('.l-header__modal__menu').slideToggle(500)
+        $('.l-header__menuButton').toggleClass('l-header__menuButton--open')
+      });
+    });
+
       $('.p-slide__autoplay').slick({
         autoplay: true, // 自動でスクロール
         autoplaySpeed: 0, // 自動再生のスライド切り替えまでの時間を設定
@@ -283,5 +314,6 @@
       });
 
     </script>
+
   </body>
 </html>
