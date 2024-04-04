@@ -325,6 +325,7 @@ h1 {
   gap: 20px;
   width: 90%;
   margin: 80px auto 60px auto;
+  position: relative;
 }
 
 @media screen and (max-width: 680px) {
@@ -454,13 +455,18 @@ h1 {
   width: 100%;
   white-space: nowrap;
   margin-top: 100px;
-  z-index: -10;
+  z-index: -1;
   overflow: hidden;
+  position:absolute;
+  top:5%;
 }
 
 .p-about__flow ul {
-  animation: flowing 38s linear infinite;
+  animation: flowing 60s linear infinite;
+  animation-direction: reverse;
   font-size: 54px;
+  color: #d5e5e6;
+  letter-spacing: 0.15em;
   transform:translateX(100%);
   margin: 0;
   padding: 0;
@@ -474,10 +480,6 @@ h1 {
 @keyframes flowing {
   0% { transform:translateX(0); }
   100% { transform:translateX(-100%); }
-}
-
-.animation-box {
-  animation-direction: reverse;
 }
 
 @media screen and (max-width: 680px) {
