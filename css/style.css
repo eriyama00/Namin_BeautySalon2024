@@ -111,14 +111,26 @@ h1 {
   */
 }
 
+.animate-link {
+  background-image: linear-gradient(90deg, #738b8c, #738b8c); 
+  background-repeat: no-repeat;
+  background-position: left bottom; /* 線の起点を左・下に設定 */
+  background-size: 0 1px; /* 線の横幅を0、縦幅を1pxに */
+  transition: all 0.3s ease 0s;
+}
+
+.animate-link:hover {
+  background-size: 100% 1px;
+}
+
 .l-header__nav__li a:hover::after {
   width: 100%;
 }
 
 .l-header__modal__menu {
-  position: relative;
+  position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 9998;
   width: 100vw;
   height: 100vh;
   background-color: #738B8C;
@@ -190,6 +202,7 @@ h1 {
     height: 20px;
     appearance: none;
     position: relative;
+    z-index: 9999;
   }
 
   .l-header__inner {
@@ -198,17 +211,6 @@ h1 {
     width: 100%;
     height: 100%;
   }
-
-  /*.l-header__menuButton {
-    width: 40px;
-    height: 20px;
-    position: relative;
-    border: none;
-    background: transparent;
-    appearance: none;
-    padding: 0;
-    cursor: pointer;
-  }*/
 
   .l-header__inner span {
     display: inline-block;
@@ -221,7 +223,6 @@ h1 {
     transition: .5s;
   }
 
-
   .l-header__inner span:nth-of-type(1) {
     top: 5px;
   }
@@ -231,7 +232,7 @@ h1 {
   }
 
   .l-header__inner span:nth-of-type(3) {
-    top: 19px;
+    top: 16px;
   }
 
   .l-header__menuButton--open .l-header__inner span {
@@ -575,6 +576,7 @@ h1 {
   gap: 15px;
   padding-bottom: 30px;
   overflow: hidden;
+  position:relative;
   z-index: 20;
 }
 
@@ -613,6 +615,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  position:relative;
   z-index: 20;
 }
 
