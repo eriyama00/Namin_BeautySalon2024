@@ -715,6 +715,11 @@ h1 {
   padding-top: 40px;
   padding-bottom: 30px;
   margin-bottom: 50px;
+  text-align:center;
+}
+
+.p-info__address span {
+  line-height: 2.5;
 }
 
 .p-info__notice {
@@ -795,7 +800,7 @@ h1 {
 }
 
 .p-info__text {
-  line-height: 2.5em;
+  line-height: 2.5;
 }
 
 .p-info__text__WH {
@@ -857,6 +862,7 @@ h1 {
   text-align: center;
   line-height: 152px;
   padding: 55px 20px;
+  position:relative;
 }
 
 .p-reserve__item03 {
@@ -865,6 +871,12 @@ h1 {
   text-align: center;
   line-height: 152px;
   padding: 55px 20px;
+  position:relative;
+}
+
+.p-reserve__item01:hover, .p-reserve__item02:hover,
+.p-reserve__item03:hover {
+  background-color: #E3E9E9;
 }
 
 .p-reserve__container__sp {
@@ -872,6 +884,13 @@ h1 {
 }
 
 @media screen and (max-width: 1000px) {
+  .p-reserve {
+    border-top: 1px solid hsla(183, 10%, 80%, 1);
+    border-bottom: 1px solid hsla(183, 10%, 80%, 1);
+    background-color: #E3E9E9;
+    padding: 60px 0;
+  }
+
   .p-reserve__container {
     display: none;
   }
@@ -904,14 +923,15 @@ h1 {
     width: 200px;
   }
 
+  .p-reserve__item01, .p-reserve__item02,
+  .p-reserve__item03 {
+    line-height: 50px;
+  }
+
   .p-reserve__item03 img {
     height: 70px;
   }
 
-  .p-reserve__item01:hover, .p-reserve__item02:hover,
-  .p-reserve__item03:hover {
-    background-color: #E3E9E9;
-  }
 }
 
 .l-footer {
@@ -923,6 +943,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
+  position:relative;
 }
 
 .l-footer__container__left {
