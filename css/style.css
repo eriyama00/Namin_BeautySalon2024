@@ -134,7 +134,11 @@ h1 {
 .l-header__modal__wrapper {
   text-align: center;
   margin: 80px 0;
-  color: #fff;
+}
+
+.l-header__nav__li a {
+  color:#317a7f;
+  mix-blend-mode: difference;
 }
 
 .l-header__modal__wrapper img{
@@ -425,6 +429,16 @@ h1 {
   width: 15px;
 }
 
+/* .c-read {
+  height: 0.7px;
+  display: inline-block;
+  color: #738b8c;
+  position: relative;
+  bottom: -10px;
+  z-index: 2;
+  transition: ease .2s;
+} */
+
 .c-read::after {
   content: "";
   height: 0.7px;
@@ -436,6 +450,58 @@ h1 {
   bottom: -10px;
   z-index: 2;
   transition: all 0.3s ease 0s;
+}
+
+.arrowMove1::after {
+  content: "";
+  position: absolute;
+  top: 42%;
+  right: 13px;
+  /*width: 5px;
+  height: 5px;
+  border-top: 2px solid #738b8c;
+  border-right: 2px solid #738b8c;
+  transform: rotate(45deg); */
+}
+
+/* .arrowMove1:hover::after {
+  animation: arrow .5s;
+}
+
+@keyframes arrow {
+  50% {
+    right: 10px;
+  }
+  100% {
+    right: 13px;
+  }
+} */
+
+.arrowMove1 {
+  display: block;
+  position: relative;
+  animation: anime1 1s ease;
+}
+
+.arrowMove1:hover {
+  display: block;
+  position: relative;
+  animation: anime1 1s ease;
+}
+
+@keyframes anime1 {
+  0% {
+    opacity: 0;
+    left: 50px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.arrowMove2:hover {
+  opacity: 1;
 }
 
 .reverse::after {
