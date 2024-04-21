@@ -9,6 +9,10 @@ body {
     "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
 }
 
+main {
+  overflow: hidden;
+}
+
 h1 {
   font-family: "Cormorant Garamond", serif;
   font-weight: 300;
@@ -293,13 +297,13 @@ h1 {
   }
 
   .FV__title {
-    font-size: 54px;
-    letter-spacing: 0.06em;
+    font-size: 36px;
+    letter-spacing: 0.02em;
   }
 
   .FV__subtitle {
     width: 100%;
-    margin: 40px 0;
+    margin: 18px 0;
   }
 }
 
@@ -319,12 +323,6 @@ h1 {
   position: relative;
 }
 
-@media screen and (max-width: 1000px) {
-  .p-about {
-    display: block;
-  }
-}
-
 .p-about__images {
   position: relative;
 }
@@ -332,6 +330,10 @@ h1 {
 .p-about__images img {
   width: auto;
   object-fit: cover;
+}
+
+.p-about__wrapper img {
+  height: 550px;
 }
 
 .p-about__item01 {
@@ -371,6 +373,24 @@ h1 {
   z-index: 2;
 }
 
+@media screen and (max-width: 1000px) {
+  .p-about {
+    display: block;
+  }
+
+  .p-about__wrapper img {
+    height: 310px;
+  }
+
+  .p-about__item02 {
+    height: 130px;
+  }
+
+  .p-about__item04 {
+    height: 100px;
+  }
+}
+
 .p-about__container {
   width: 50%;
 }
@@ -379,9 +399,6 @@ h1 {
   padding-bottom: 30px;
 }
 
-.p-about__wrapper img {
-  height: 550px;
-}
 
 .c-text {
   letter-spacing: 0.08em;
@@ -786,6 +803,10 @@ h1 {
   .c-date::before {
     display: none;
   }
+
+  .p-info__notice {
+    padding: 60px 23px;
+  }
 }
 
 .p-slide__autoplay {
@@ -835,7 +856,6 @@ h1 {
 .p-reserve__item01 {
   width: 100%;
   height: 100%;
-  align-items: center;
   border-right: 1px solid hsla(183, 10%, 80%, 1);
   text-align: center;
   line-height: 152px;
@@ -909,6 +929,7 @@ h1 {
   .p-reserve__list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .c-small {
@@ -927,9 +948,17 @@ h1 {
   .p-reserve__item03 {
     line-height: 50px;
   }
+  
+  .p-reserve__item01 img {
+    height: 50px;
+  }
+
+  .p-reserve__item02 img {
+    height: 40px;
+  }
 
   .p-reserve__item03 img {
-    height: 70px;
+    height: 50px;
   }
 
 }
