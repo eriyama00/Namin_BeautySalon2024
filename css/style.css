@@ -417,6 +417,7 @@ h1 {
   position: relative;
   margin-top: 50px;
   width: 200px;
+  transition: transform 0.3s ease;
 }
 
 .c-read__text {
@@ -459,38 +460,15 @@ h1 {
   right: 13px;
 }
 
-/* .arrowMove1:hover {
-  animation: arrow .5s;
-}
-
-@keyframes arrow {
-  50% {
-    right: 10px;
-  }
-  100% {
-    right: 13px;
-  }
-} */
-
 .arrowMove1 {
   display: block;
-  position: relative;
-  animation: anime1 1s ease;
+  position: absolute;
+  left: 80%;
+  margin-top: 10px;
 }
 
-.arrowMove1:hover {
-  opacity: 0.5;
-}
-
-@keyframes anime1 {
-  0% {
-    opacity: 0;
-    left: 50px;
-  }
-  100% {
-    opacity: 1;
-    left: 0;
-  }
+.c-read:hover .arrowMove1 {
+  transform: translateX(10px);
 }
 
 .reverse::after {
@@ -746,7 +724,12 @@ h1 {
   right: 0;
 }
 
-.p-menu__list__ul a::after {
+.p-menu__list__ul__li {
+  position:relative;
+  transition: transform 0.3s ease;
+}
+
+.p-menu__list__ul__li a::after {
   content: "";
   height: 0.7px;
   left: 0;
@@ -762,6 +745,17 @@ h1 {
   background-color: #ffffff;
   width: 16vw;
   z-index: 1;
+}
+
+.arrowMove2 {
+  display: block;
+  position: absolute;
+  left: 80%;
+  margin-top: 10px;
+}
+
+.p-menu__list__ul__li:hover .arrowMove2 {
+  transform: translateX(10px);
 }
 
 
