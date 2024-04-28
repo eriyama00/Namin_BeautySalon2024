@@ -136,10 +136,6 @@ h1 {
   margin: 80px 0;
 }
 
-.l-header__nav__li {
-  color:#317a7f;
-  mix-blend-mode: difference;
-}
 
 .l-header__modal__wrapper img{
   width: 20px;
@@ -161,6 +157,15 @@ h1 {
 
 .l-header__nav__sp {
   display: none;
+}
+
+.l-header__nav__li {
+  color:#317a7f;
+  mix-blend-mode: difference;
+}
+
+.l-header__text {
+  color:#e3f9fa;
 }
 
 @media screen and (max-width: 1000px) {
