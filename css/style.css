@@ -129,6 +129,7 @@ h1 {
   height: 100vh;
   background-color: #738B8C;
   display: none;
+  overflow:scroll;
 }
 
 .l-header__modal__wrapper {
