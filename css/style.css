@@ -178,6 +178,10 @@ h1 {
     height: 27px;
   }
 
+  .l-header__nav__sp__text {
+    color:#e3f9fa;
+  }
+
   .l-header__wrapper {
     padding: 25px 0;
   }
@@ -423,6 +427,7 @@ h1 {
   position: relative;
   margin-top: 50px;
   width: 200px;
+  align-items: center;
   transition: transform 0.3s ease;
 }
 
@@ -454,7 +459,7 @@ h1 {
   display: inline-block;
   background-color: #738b8c;
   position: absolute;
-  bottom: -10px;
+  top: 2.5em;
   z-index: 2;
   transition: all 0.3s ease 0s;
 }
@@ -462,7 +467,6 @@ h1 {
 .arrowMove1::after {
   content: "";
   position: absolute;
-  top: 42%;
   right: 13px;
 }
 
@@ -470,7 +474,6 @@ h1 {
   display: block;
   position: absolute;
   left: 80%;
-  margin-top: 10px;
 }
 
 .c-read:hover .arrowMove1 {
@@ -535,6 +538,10 @@ h1 {
 
   .c-read {
     width: 100%;
+  }
+
+  .c-read img {
+    left: 95%;
   }
 
   .c-read::after {
@@ -680,8 +687,9 @@ h1 {
 .p-menu__list__ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 22px;
   width: calc(100% - 1px + 3vw);
+  align-items: center;
 }
 
 .p-menu__list__ul__li {
@@ -726,7 +734,7 @@ h1 {
 .p-menu__list__ul img {
   width: 15px;
   position: absolute;
-  top: calc(50% + 0.1em);
+  top: calc(45% + 0.1em);
   right: 0;
 }
 
@@ -756,14 +764,12 @@ h1 {
 .arrowMove2 {
   display: block;
   position: absolute;
-  left: 80%;
-  margin-top: 10px;
+  /*left: 80%;*/
 }
 
 .p-menu__list__ul__li:hover .arrowMove2 {
   transform: translateX(10px);
 }
-
 
 @media screen and (max-width: 1000px) {
   .p-menu__image__01 {

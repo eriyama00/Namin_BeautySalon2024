@@ -328,7 +328,7 @@
     $(function() {
 
     $(window).on("scroll", function() {
-        if ($(this).scrollTop() > 2000 && $(this).scrollTop() < 4000) {
+        if ($(this).scrollTop() > 1880 && $(this).scrollTop() < 3500) {
             $(".l-header__nav__li").addClass("l-header__text");
             } else {
             $(".l-header__nav__li").removeClass("l-header__text");
@@ -339,7 +339,7 @@
     $(function(){
     const showClass = "show";
 
-    $(".c-content__bg, .l-header__text").each(function(index, content){
+    $(".c-content__bg, .l-header__nav__sp").each(function(index, content){
         $(window).on("load scroll resize", function(){
             const windowHeight = $(window).height();
             const scroll = $(window).scrollTop();
