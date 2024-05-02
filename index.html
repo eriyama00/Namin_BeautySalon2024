@@ -326,12 +326,10 @@
 });
 
 
-
-
     $(function(){
+    const content = ".c-content__bg";
     const showClass = "show";
 
-    $(".c-content__bg, .l-header__nav__sp").each(function(index, content){
         $(window).on("load scroll resize", function(){
             const windowHeight = $(window).height();
             const scroll = $(window).scrollTop();
@@ -352,7 +350,6 @@
           
           });
       });
-    });
 
       $('.p-slide__autoplay').slick({
         autoplay: true, // 自動でスクロール
