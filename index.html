@@ -325,16 +325,8 @@
   });
 });
 
-    $(function() {
 
-    $(window).on("scroll", function() {
-        if ($(this).scrollTop() > 1880 && $(this).scrollTop() < 3500) {
-            $(".l-header__nav__li").addClass("l-header__text");
-            } else {
-            $(".l-header__nav__li").removeClass("l-header__text");
-        }
-    });
-});
+
 
     $(function(){
     const showClass = "show";
@@ -349,10 +341,15 @@
             const outTiming = windowHeight * 0.6;
 
             if (scroll + windowHeight >= offset + setTiming && scroll + windowHeight < offset + contentHeight + outTiming){
+            $(".l-header__nav__li").addClass("l-header__text");
+            $(".l-header__menu").addClass("l-header__text");
             $(content).addClass(showClass);
             } else {
+            $(".l-header__nav__li").removeClass("l-header__text");
+            $(".l-header__menu").removeClass("l-header__text");
             $(content).removeClass(showClass);
             }
+          
           });
       });
     });
