@@ -333,10 +333,10 @@
         $(window).on("load scroll resize", function(){
             const windowHeight = $(window).height();
             const scroll = $(window).scrollTop();
-            const offset = $(content).offset().top;
+            const offset = $(".p-concept").offset().top;
             const setTiming = windowHeight * 0.6;
-            const contentHeight = $(content).height();
-            const outTiming = windowHeight * 0.6;
+            const contentHeight = $(".p-menu").height();
+            const outTiming = windowHeight * 1.7;
 
             if (scroll + windowHeight >= offset + setTiming && scroll + windowHeight < offset + contentHeight + outTiming){
             $(".l-header__nav__li").addClass("l-header__text");
