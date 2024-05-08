@@ -327,25 +327,28 @@
 
 
     $(function(){
-    const content = ".c-content__bg";
+     // const content = ".c-content__bg";
     const showClass = "show";
 
         $(window).on("load scroll resize", function(){
             const windowHeight = $(window).height();
             const scroll = $(window).scrollTop();
-            const offset = $(".p-concept").offset().top;
+            const offset01 = $(".p-concept").offset().top;
+            const offset02 = $(".p-menu").offset().top;
             const setTiming = windowHeight * 0.6;
             const contentHeight = $(".p-menu").height();
-            const outTiming = windowHeight * 1.7;
+            const outTiming = windowHeight * 0.6;
 
-            if (scroll + windowHeight >= offset + setTiming && scroll + windowHeight < offset + contentHeight + outTiming){
+            if (scroll + windowHeight >= offset01 + setTiming && scroll + windowHeight < offset02 + contentHeight + outTiming){
             $(".l-header__nav__li").addClass("l-header__text");
             $(".l-header__menu").addClass("l-header__text");
-            $(content).addClass(showClass);
+            $(".p-concept").addClass(showClass);
+            $(".p-menu").addClass(showClass);
             } else {
             $(".l-header__nav__li").removeClass("l-header__text");
             $(".l-header__menu").removeClass("l-header__text");
-            $(content).removeClass(showClass);
+            $(".p-concept").removeClass(showClass);
+            $(".p-menu").removeClass(showClass);
             }
           
           });
